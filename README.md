@@ -1,5 +1,7 @@
 # prisma-lean
 
+![tests: passed](https://img.shields.io/badge/tests-passed-brightgreen)
+
 A tiny [Prisma](https://www.prisma.io/) generator that turns your `schema.prisma` into a small, typed client for **MySQL**, built directly on [`mysql2`](https://github.com/sidorares/node-mysql2).
 
 No query engine binary and no runtime schema parsing. The generator writes one `index.js` and one `index.d.ts` with plain parameterized SQL.
