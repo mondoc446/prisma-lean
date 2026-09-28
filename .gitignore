@@ -1,0 +1,6 @@
+node_modules/
+dist/
+test/.tmp/
+example/generated/
+evaluation.md
+.remember/

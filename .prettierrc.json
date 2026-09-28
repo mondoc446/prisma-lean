@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ["src/**/*.ts", "tsup.config.ts"],
+      "options": { "tabWidth": 4 }
+    }
+  ]
+}

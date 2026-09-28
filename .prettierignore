@@ -1,0 +1,7 @@
+dist/
+node_modules/
+example/generated/
+package-lock.json
+evaluation.md
+.remember/
+.idea/

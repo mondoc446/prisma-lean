@@ -1,0 +1,46 @@
+{
+  "name": "prisma-lean",
+  "version": "1.1.0",
+  "description": "Prisma generator that emits a small, typed MySQL client built on mysql2. No query engine.",
+  "license": "MIT",
+  "keywords": [
+    "prisma",
+    "prisma-generator",
+    "mysql",
+    "mysql2",
+    "orm",
+    "typescript"
+  ],
+  "bin": {
+    "prisma-lean": "dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "node test/run.cjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "example:generate": "prisma generate --schema example/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/generator-helper": "^5.0.0"
+  },
+  "peerDependencies": {
+    "prisma": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "mysql2": "^3.24.4",
+    "prettier": "^3.9.9",
+    "prisma": "^5.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
